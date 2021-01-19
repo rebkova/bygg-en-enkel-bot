@@ -4,14 +4,24 @@
 
 // Den här funktionen ska returnera true om det är lördag
 // och false om det inte är lördag
+
+var currentDay = new Date().getDay()
+
 const isItSaturdayToday = (date) => {
-  return
+
+  if (currentDay === 6) {
+    return true
+  } else {
+    return false
+  }
+
 }
 
 // Denna funktion ska returnera hur många dagar det är
 // kvar till lördag
 const daysUntil = (date) => {
-  return
+
+  return Math.abs(6 - currentDay)
 }
 
 export {
